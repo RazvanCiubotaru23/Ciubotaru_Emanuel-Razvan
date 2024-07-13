@@ -1,6 +1,6 @@
 
 resource "azurerm_linux_virtual_machine" "vm" {
-  count               = 2
+  count               = 3
   name                = "vm-mtc-${count.index}"
   resource_group_name = azurerm_resource_group.proj.name
   location            = azurerm_resource_group.proj.location
@@ -27,6 +27,6 @@ resource "azurerm_linux_virtual_machine" "vm" {
     version   = "latest"
   }
 
-  computer_name                   = "hostname${count.index + 1}"
+  computer_name                   = "hostname${count.index + 1}"#si aici as vrea ca numerotarea sa inceapa de la 1
   disable_password_authentication = false
 }

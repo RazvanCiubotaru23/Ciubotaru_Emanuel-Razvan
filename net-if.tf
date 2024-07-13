@@ -1,7 +1,6 @@
-
 resource "azurerm_network_interface" "nic" {
-  count               = 2
-  name                = "net-if-${count.index + 1}"
+  count               = 3
+  name                = "net-if-${count.index + 1}" # am lasat 1 pt o numerotare mai usoara a interfetelor
   location            = azurerm_resource_group.proj.location
   resource_group_name = azurerm_resource_group.proj.name
 
@@ -18,5 +17,6 @@ resource "azurerm_network_interface" "nic" {
     azurerm_public_ip.mtc-pub_ip 
   ]
 }
+#add
 
 
