@@ -1,4 +1,4 @@
-#container registry
+
 resource "azurerm_container_registry" "c-reg" {
   name                     = "practica"  
   resource_group_name      = azurerm_resource_group.proj.name
@@ -6,4 +6,3 @@ resource "azurerm_container_registry" "c-reg" {
   sku                      = "Basic"  
   admin_enabled            = true
 }
-
