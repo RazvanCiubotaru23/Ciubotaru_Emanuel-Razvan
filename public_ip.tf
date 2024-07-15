@@ -1,7 +1,7 @@
 
 
 resource "azurerm_public_ip" "mtc-pub_ip" {
-  count               = 2
+  count               = 3
   name                = "pub_ip-${count.index}"
   resource_group_name = azurerm_resource_group.proj.name
   location            = azurerm_resource_group.proj.location
@@ -10,4 +10,3 @@ resource "azurerm_public_ip" "mtc-pub_ip" {
     environment = "Production"
   }
 }
-#test daca functioneaza
