@@ -17,6 +17,6 @@ resource "azurerm_network_interface" "nic" {
     azurerm_public_ip.mtc-pub_ip 
   ]
 }
-#add
+#password H6T!C4g3sZ&132=_ practica.azurecr.io/razvan69/sql
 
-
+#practica.azurecr.io/razvan69/sql   0.0.1-SNAPSHOT

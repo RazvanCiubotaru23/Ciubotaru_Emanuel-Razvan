@@ -1,7 +1,7 @@
 
 resource "azurerm_resource_group" "proj" {
   name     = "project"
-  location = "West Europe"
+  location = "West Europe" 
 }
 #virtual network
 resource "azurerm_virtual_network" "vi-net" {

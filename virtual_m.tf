@@ -30,3 +30,4 @@ resource "azurerm_linux_virtual_machine" "vm" {
   computer_name                   = "hostname${count.index + 1}"#si aici as vrea ca numerotarea sa inceapa de la 1
   disable_password_authentication = false
 }
+#docker pull  razvan69/practica:0.0.1-SNAPSHOT
