@@ -17,6 +17,4 @@ resource "azurerm_network_interface" "nic" {
     azurerm_public_ip.mtc-pub_ip 
   ]
 }
-#add
-
 
