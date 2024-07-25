@@ -14,7 +14,7 @@ resource "azurerm_network_interface" "nic" {
 
   depends_on = [
     azurerm_subnet.mtc-subnet,
-    azurerm_public_ip.mtc-pub_ip 
+    azurerm_public_ip.mtc-pub_ip
   ]
 }
 

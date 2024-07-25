@@ -10,8 +10,8 @@ resource "null_resource" "ping" {
     inline = [
       "ping -c 4 ${azurerm_public_ip.mtc-pub_ip[1].ip_address}",
       //"ping -c 4 ${azurerm_public_ip.mtc-pub_ip[2].ip_address}"
-    ] 
-   
+    ]
+
   }
 
   depends_on = [
