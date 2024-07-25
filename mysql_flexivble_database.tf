@@ -15,7 +15,7 @@ resource "azurerm_mysql_flexible_database" "main" {
 #     mysql -h ${azurerm_mysql_flexible_server.practicaibm.fqdn} \
 #     -u ${azurerm_mysql_flexible_server.practicaibm.administrator_login} \
 #     -p${azurerm_mysql_flexible_server.practicaibm.administrator_password} \
-#     -D main\
+#     -D mysqlfsdb\
 #     -e "ALTER TABLE mysqlfsdb; ADD COLUMN img1 BLOB;"
 #     EOT
 #   }
