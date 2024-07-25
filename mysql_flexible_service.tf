@@ -6,5 +6,5 @@ resource "azurerm_mysql_flexible_server" "practicaibm" {
   administrator_password = "H@Sh1CoR3!"
   backup_retention_days  = 7
   sku_name               = "B_Standard_B1ms"
-  zone                   = "2" 
+  zone                   = "2"
 }
